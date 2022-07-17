@@ -1,0 +1,120 @@
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Cream);
+  padding: 2rem 1rem;
+}
+
+div {
+  width: 100%;
+}
+
+.imagen img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+div.main {
+  background-color: white;
+  border-radius: 10px;
+}
+
+p {
+  font-family: "montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
+}
+
+p.encabezado {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  font-family: "fraunces", sans-serif;
+  color: var(--Very-dark-blue);
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
+div.contenido {
+  padding: 1.5rem;
+  width: auto;
+  line-height: 1.5rem;
+}
+
+div.precio {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+p.final {
+  font-family: "Fraunces", sans-serif;
+  color: var(--Dark-cyan);
+  font-size: 2rem;
+  margin-right: 8%;
+}
+
+p.rayado {
+  text-decoration: line-through;
+}
+
+div.anadir {
+  background-color: var(--Dark-cyan);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+p.boton {
+  color: white;
+  font-weight: bold;
+}
+
+.carrito {
+  margin-right: 0.5rem;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .main {
+    display: flex;
+    max-width: 600px;
+  }
+
+  .imagen {
+    max-width: 600px;
+  }
+
+  .imagen img {
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+  }
+
+  .contenido {
+    max-width: 45%;
+  }
+}
